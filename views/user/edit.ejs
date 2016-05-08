@@ -1,0 +1,21 @@
+<% include ../layout/header %>
+
+<div id="bgcontainer"></div>
+<!-- <p id="registrerenP">Edit Page</p> -->
+
+	<form action="<%= req.baseUrl + "/" %>" method="post" id="bgform">
+			<% if(error){ %>
+		  	<%= error %>
+		<% } %>
+
+		<!-- <label for="password">Password</label> -->
+		<input id="password" type="password" name="password" value="" placeholder="Password">
+
+		<!-- <label for="name">Name</label> -->
+		<input id="name" type="text" name="name" value="" placeholder="name" >
+
+		<input type="submit" value="edit">
+	</form>
+
+
+<% include ../layout/footer %>
